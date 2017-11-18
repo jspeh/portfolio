@@ -1,0 +1,305 @@
+.home-wrapper {
+       .hero {
+        position: relative;
+        height: 100vh;
+        background: url(../img/home/bg-hero.png) no-repeat right bottom;
+        background-color: #0B0B0B;
+        color: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+       .hero-card {
+        background-color: #141414;
+        width: auto;
+        padding: 180px 0;
+        width: 60%;
+        position: absolute;
+        bottom: -100px;
+        z-index: 100;
+        opacity: 0.95;
+        box-shadow: 0px 40px 60px rgba(0,0,0,0.5);
+        @media (max-width: 768px) {
+            width: 92%;
+        }
+        .text-content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            @media (max-width: 768px) {
+                width: 85%;
+            }
+        }
+        h1 {
+            font-size: 52px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 62px;
+            @media (max-width: 768px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    }
+    
+    .divider {
+        position: relative;
+        height: 75vh;
+        background-color: #F7F7F7;
+        background: url(../img/home/bg-divider.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: 768px) {
+            height: 90vh;
+        }
+        .text-content {
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            @media (max-width: 768px) {
+                width: 40%;
+            }
+        }
+        h5 {
+            color: $blue;
+        }
+        p {
+            font-size: 18px;
+            color: #191919;
+            letter-spacing: 0;
+            line-height: 28px;
+            @media (max-width: 768px) {
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+    }
+    .main-bg {
+        background: url(../img/home/bg-main.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .main {
+        .row {
+            margin-bottom: 200px;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+        }
+        .image {
+            position: relative;
+            margin: 20px;
+        }
+        .img-accent {
+            background-color: #E9E5E1;
+            position: absolute;
+            left: -90px;
+            top: -90px;
+            height: 100%;
+            width: 100%;
+            z-index: 50;
+            @media (max-width: 768px) {
+                left: -20px;
+                top: -50px;
+            }
+            h5 {
+
+                margin-top: 45px;
+                margin-left: 90px;
+
+/*
+                top: 80%;
+                margin-left: -5px;
+                transform: rotate(-90deg);
+                position: absolute;
+*/
+                @media (max-width: 768px) {
+                    margin-top: 25px;
+                    margin-left: 20px;
+                }
+            }
+             &.one {
+            background-color: #6542FF;
+                }
+            &.two {
+            background-color: #272827;
+                }
+             &.three {
+            background-color: #FFD101;
+                }
+              &.four {
+            background-color: #FB9B2A;
+                }
+              &.five {
+            background-color: #00A9DC;
+                }           
+            }
+        .img-main {
+            position: relative;
+            z-index: 100;
+                box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(0.95, 0.95);
+            }
+        }
+        h1 {
+            font-family: 'Circular-Black';
+            font-size: 120px;
+            color: #3E3E3E;
+            letter-spacing: -5px;
+            line-height: 110px;
+            @media (max-width: 768px) {
+                font-size: 54px;
+                letter-spacing: -2px;
+                line-height: 40px;
+                padding: 0 20px;
+            }
+        }
+        p {
+            font-size: 20px;
+            color: #191919;
+            letter-spacing: 0;
+            line-height: 30px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 26px;
+                padding: 0 20px;
+            }
+        }
+    }
+    .about {
+        background-color: #211D1E;
+        color: #fff; // height: 70vh;
+        position: relative;
+        .flex {
+            display: flex;
+            height: 100%;
+        }
+        h4 {
+            font-family: 'Circular-Bold';
+            opacity: 0.7;
+            font-size: 15px;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+            line-height: 15px;
+            text-transform: uppercase;
+            @media (max-width: 768px) {
+                opacity: 0.7;
+                font-size: 12px;
+                letter-spacing: 2px;
+                line-height: 11px;
+            }
+        }
+        a h4 {
+            font-family: 'Circular-Bold';
+            font-size: 12px;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+            line-height: 10px;
+            opacity: 1;
+            text-transform: uppercase;
+            margin-top: 30px;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                color: #FFFFFF;
+                letter-spacing: 2px;
+                line-height: 11px;
+                text-transform: uppercase;
+            }
+        }
+        a {
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                .img-arrow-right {
+                    margin-left: 12px;
+                }
+            }
+        }
+        .img-arrow-right {
+            margin-bottom: 2px;
+            margin-left: 5px;
+            transition: all 0.4s ease;
+        }
+        p {
+            font-size: 24px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 34px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 28px;
+            }
+        }
+        .first {
+            height: 50vh;
+        }
+        .img-about {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            @media (max-width: 768px) {
+                height: 100%;
+                min-height: 250px;
+            }
+        }
+        .about-box {
+            background-color: #fff;
+            position: relative;
+        }
+        .about-content {
+            background-color: $black;
+            width: 70%;
+            right: 0;
+            top: -200px;
+            position: absolute;
+            z-index: 100;
+            padding: 130px 200px;
+            box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.40);
+            @media (max-width: 768px) {
+                top: -30px;
+                padding: 50px 30px;
+                width: 90%;
+            }
+        }
+        .about-text {
+            width: 80%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        .img-about-diagonal {
+            background: url(../img/home/bg-about.png) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 60vh;
+            @media (max-width: 768px) {
+                height: 85vh;
+            }
+        }
+    }
+}
+.block-revealer__element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	pointer-events: none;
+	opacity: 0;
+}

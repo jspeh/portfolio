@@ -1,0 +1,40 @@
+.morph-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.shape-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 800px;
+}
+
+@media (max-width: 768px) {
+    .shape-wrap {
+        min-height: 400px;
+    }
+}
+
+.morph {
+    fill: none;
+    stroke-width: 12px;
+    stroke: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+    .morph {
+        stroke-width: 42px;
+    }
+}

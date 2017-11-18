@@ -1,0 +1,146 @@
+.work-wrapper {
+    .sidebar-accent img {
+        position: fixed;
+        z-index: 200;
+        top: 35%;
+        left: 50px;
+    }
+    .hero {
+        position: relative;
+        height: 100vh;
+        background-color: #0B0B0B;
+        color: #fff;
+        background: url(http://www.dwdw.co/wp-content/themes/dwdw/img/home/about.jpg) no-repeat right bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .hero-card {
+        background-color: #141414;
+        width: auto;
+        padding: 200px 0;
+        width: 60%;
+        position: absolute;
+        bottom: -100px;
+        z-index: 100;
+        opacity: 0.8;
+        @media (max-width: 768px) {
+            width: 92%;
+        }
+        .text-content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            @media (max-width: 768px) {
+                width: 85%;
+            }
+        }
+        h1 {
+            font-size: 52px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 62px;
+            @media (max-width: 768px) {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    }
+    .bucket {
+        background: url(../img/home/bg-main.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-color: #f7f7f7;
+
+        .container {
+            padding: 160px 0 160px;
+            margin: 0 auto;
+            width: 75%;
+            max-width: 1920px;
+        }
+        .grid {
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            @media (min-width: 768px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+        .card--case-study {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: -.1rem;
+            margin-right: -.1rem;
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(0.90, 0.90);
+            }
+            @media (min-width: 1024px) {
+                width: 50%;
+            }
+        }
+        @media (min-width: 768px) {
+        .grid>.grid__item {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            }
+        }
+        .pos-r {
+            position: relative!important;
+        }
+        .card--case-study__image img {
+            width: 100.1%;
+        }
+        
+        .card--case-study__text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            color: #fff;
+            padding: 3vw;
+        }
+        h3.meta {
+            font-size: .9rem;
+            line-height: 1.4;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            max-width: none;
+            font-weight: 700;
+        }
+        .card--case-study__text .meta {
+            margin-bottom: 2rem;
+        }
+        .a11y {
+            clip: rect(1px,1px,1px,1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute!important;
+            width: 1px;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .card--case-study__text .h3 {
+            margin: 0;
+            font-weight: 400;
+         @media (min-width: 1440px) {
+             font-size: 1.69924vw;
+             line-height: 1.23333;
+            }    
+        }
+       }
+        
+        
+    }
